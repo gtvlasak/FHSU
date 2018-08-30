@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lesson 2 | Audio Examples</title>
+    <meta name="description" content="Multiple audio examples with very basic JS functions">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar fixed-top">
+        <a class="navbar-brand" href="#">
+        </a>
+        <p id="navtitle">STOCK AUDIO</p>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <a href="#">HOME</a>
+            </li>
+        </ul>
+
+    </nav>
+    <div class="container-fluid">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="jumbotron">
+            <h1>PRESS//PLAY</h1>
+            <p>Free stock audio options<br> are available below, with<br> more to come soon!</p>
+        </div>
+        <div class="audio-container">
+            <audio id="nightowl" controls="controls">
+                <source src="nightowl.mp3" type="audio/mpeg"> Your browser doesn't support the new HTML5 audio element.
+            </audio>
+            <br>
+            <h4 id="title-artist">Night Owl by Broke For Free</h4> 
+            <p id=song-description>
+                    Looking for something minimal with a modern electronic<br>feel?  Well look no further!
+                </p>
+            <p>...</p>
+            <button onclick="playOne()" type="button">
+                Song Length
+            </button>
+        </div>
+        <div class="audio-container">
+            <audio id="siesta" controls="controls">
+                <source src="siesta.mp3" type="audio/mpeg"> Your browser doesn't support the new HTML5 audio element.
+            </audio>
+            <br>
+            <h4 id="title-artist">Siesta by Jahzzar</h4> 
+            <p id=song-description>
+                This song is perfect if you are looking for a chill, indie<br>vibe for your website.  The bass is quite groovy! 
+            </p>
+            <p>...</p>
+            <button onclick="playTwo()" type="button">
+                Song Length
+            </button>
+        </div>
+        <script>
+            var nightowl = document.getElementById("nightowl");
+
+            function playOne() {
+                alert(nightowl.duration);
+            }
+
+            var siesta = document.getElementById("siesta");
+
+            function playTwo() {
+                alert(siesta.duration);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
