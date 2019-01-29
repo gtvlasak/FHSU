@@ -1,0 +1,58 @@
+#siteWrapper {
+    padding: 0;
+    overflow: hidden;
+}
+
+.jumbotron {
+    background-color: #967150;
+}
+
+h1, p {
+    color: cornsilk;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    margin: 0% 25%;
+}
+
+.splash {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.fa-angle-double-down {
+    color: cornsilk;
+    font-size: 300%; 
+}
+
+#bio {
+    text-align: center;
+    margin-bottom: 5rem;   
+}
+
+footer {
+    text-align: center;
+}
+
+#footertext {
+    color: black;
+}
+
+@media only screen and (min-device-width : 768px) {
+
+    .jumbotron {
+        height: 50rem;
+        background-image: url("img/jumbo.jpg");
+        background-size: 115%;
+    }
+}
