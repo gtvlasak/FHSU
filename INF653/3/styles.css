@@ -1,0 +1,43 @@
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: scale-down;
+}
+.jumbotron {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    background-image: url(logo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#movieBanner {
+   margin-top: 25rem;
+}
+
+#mainCast {
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#headText:hover {
+    color: yellow;
+}
+
+footer {
+    text-align: center;
+}
+
+#footertext {
+    color: black;
+}
