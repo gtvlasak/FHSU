@@ -1,0 +1,55 @@
+[contenteditable=true] {
+    border: 1px solid #fff;
+}
+
+[contenteditable=true]:empty:before {
+    content: attr(placeholder);
+    display: block;
+    color: #999;
+}
+
+[contenteditable=true]:hover {
+    border-bottom: 1px solid rgb(89, 226, 151);
+}
+
+.add {
+    width: 5%;
+}
+
+.btn-add-note {
+    background: transparent;
+    border: none;
+}
+
+.btn-add-note i {
+    color: rgb(89, 226, 151);
+    transition: all .25s ease-in;
+}
+
+.btn-add-note i:hover {
+    transition-property: transform;
+    transform: scale(1.3)
+}
+
+.delete {
+    width: 5%;
+}
+
+.trash {
+    background: transparent;
+    border: none;
+}
+
+.trash i {
+    color: rgb(214, 85, 85);
+    transition: all .25s ease-in;
+}
+
+.trash i:hover {
+    transition-property: transform;
+    transform: scale(1.2)
+}
+
+#note {
+    border: 1px solid transparent;
+}
