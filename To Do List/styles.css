@@ -50,6 +50,21 @@
     transform: scale(1.2)
 }
 
+.trash2 {
+    background: transparent;
+    border: none;
+}
+
+.trash2 i {
+    color: rgb(214, 85, 85);
+    transition: all .25s ease-in;
+}
+
+.trash2 i:hover {
+    transition-property: transform;
+    transform: scale(1.2)
+}
+
 #note {
     border: 1px solid transparent;
 }
