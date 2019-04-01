@@ -1,0 +1,452 @@
+/* Font Face information used for all fonts throughout the website.  One for the logo, ne for graphics, and one for the headers.
+   Verdana was chosen as the standard font for content throughout the website */
+
+@font-face {
+    font-family: Run;
+    src: url("fonts/Run.otf");
+}
+
+@font-face {
+    font-family: Bowlby;
+    src: url("fonts/Bowlby.ttf");
+}
+
+@font-face {
+    font-family: Bloody;
+    src: url("fonts/Bloody.ttf");
+}
+
+/* End of font face section */
+
+/* Navbar stylings from header.php */
+
+.navbar-brand {
+    color: white !important;
+    font-family: Run;
+}
+
+.nav-item {
+    font-family: Bowlby;
+    letter-spacing: .2rem;
+    padding: 0rem 1rem;
+}
+
+.nav-link:hover {
+    color: rgb(170, 15, 15) !important;
+    transition: color 0.5s linear;
+    -webkit-transition: color 0.3s linear;
+    -moz-transition: color 0.3s linear;
+}
+
+/* End of navbar stylings */
+
+/* Footer stylings from footer.php */
+
+footer {
+    margin-top: 7rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    background-color: #343a40;
+    padding: 4rem;
+}
+
+.footerContent {
+    color: white;
+    list-style-type: none;
+    font-family: Bowlby;
+}
+
+.footerContent li a {
+    color: white;
+}
+
+.footerContent li a:hover {
+    color: rgb(170, 15, 15);
+}
+
+.footerLogo {
+    font-family: Run;
+}
+/* End of footer.php styles. */
+
+/* Common tag CSS stylings */
+
+body {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+img {
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+
+}
+
+/* End of common tag stylings */
+
+/* Beginning of index page stylings and jumbotron, etc. */
+
+.jumbotron {
+    position: absolute;
+    background-color: black;
+    border-top: 1.5rem solid rgb(170, 15, 15);
+    margin-top: 3.5rem;
+    border-bottom: 1.5rem solid rgb(170, 15, 15);
+    position: relative;
+    height: 600px;
+    width: 100%;
+    padding: 0;
+}
+
+.horrorIcon {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    background-image: url("../files/images/jumbotron.jpg");
+    background-repeat: no-repeat;
+}
+
+#movieBanner {
+    position: relative;
+    top: 30%;
+
+}
+
+#jumboTitle {
+    font-family: Bloody;
+    letter-spacing: .35rem;
+    font-size: 400%;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#jumboHeader {
+    font-family: Bloody;
+    letter-spacing: .35rem;
+    font-size: 6rem;
+    color: rgb(170, 15, 15);
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* End of index page stylings for the jumbotron area. */
+
+/* Table CSS for the index page. */
+
+.tableContainer {
+    margin-top: 4rem;
+    background-color: black;
+    box-shadow: 2px 2px 2px black;
+    padding: 3rem;
+}
+
+.table {
+    background-color: grey;
+    border: 2px solid rgb(170, 15, 15);
+}
+
+.headText {
+    text-align: center;
+}
+
+#rankText {
+    color: white;
+    text-shadow: 2px 2px 2px rgb(170, 15, 15);
+    font-family: Bloody;
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+.imgWrapper {
+    position: relative;
+    background-color: black;
+}
+
+.detailsPlus {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    visibility: hidden;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.imgWrapper:hover .detailsPlus { /* Hover effect to create details plus over movie image. */
+    opacity: 0.7;
+    visibility: visible;
+    text-decoration: none;
+    cursor: pointer;
+    vertical-align: middle !important;
+    padding: 4rem;
+}
+
+.table td {
+    align-content: center;
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    vertical-align: middle !important;
+    border: none;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+#movieRatings {
+    font-size: 2rem;
+    font-family: Bloody;
+    color: rgb(170, 15, 15);
+}
+
+/* End of table stylings for index page. */
+
+/* Button stylings for various buttons on the page. */
+
+.addMovie {
+    float: right;
+    color: white;
+    font-family: Verdana;
+    background-color: rgb(170, 15, 15) !important;
+}
+
+.addMovie a {
+    color: white;
+    font-weight: bold;
+}
+
+.closeMovie {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    float: right;
+    color: white;
+    font-family: Verdana;
+    background-color: rgb(170, 15, 15) !important;
+    border-radius: 50%;
+}
+
+#movieForm {
+    background: grey;
+    box-shadow: 4px 2px 2px black;
+    border: 1px solid rgb(170, 15, 15);
+    border-radius: 2%;
+    margin:10% 20%;
+    padding: 2.5% 10%;
+}
+
+.formHeader {
+    font-family: Run;
+    color:  rgb(170, 15, 15);
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+
+}
+
+.formBody {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.form-control::placeholder {
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(170, 15, 15);
+    opacity: .5;
+}
+
+/* --------------------------------------------------- */
+
+/* THIS IS WHERE THE CSS FOR THE DETAILS PAGES STARTS! */
+
+/* Wrapper stylings for details container to differentiate from background. */
+
+#detailsWrapper {
+    width: 80%;
+    margin-top: 11rem;
+    background-color: black;
+    box-shadow: 2px 2px 2px black;
+    padding: 3rem;
+    border: 3px solid rgb(170, 15, 15);
+}
+
+/* End of details wrapper styling. */
+
+/* Top of details page styles.  Includes movie poster, title, rating, runtime, etc. */
+
+.detailsPhoto {
+    padding: 0rem 2rem;
+    clear: both;
+}
+
+.detailsPic {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    border: 1px solid white;
+}
+
+.detailsTitle {
+    max-width: fit-content;
+    padding-left: 0rem 2rem;    
+}
+
+#detailsTitleText {
+    font-family: Bowlby;
+    letter-spacing: .1rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.detailsEtc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    max-width: fit-content;
+    margin-top: .4rem;
+    
+}
+
+.redLine {
+    color: rgb(170, 15, 15);
+}
+
+/* End of top of details section */
+
+/* Beginning of details stylings for the middle section.  Supplemental info such as director, writers, actors, etc. */
+
+.detailsMiddle {
+    padding-left: 1rem;
+}
+
+.detailsDirector {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+}
+
+#directorHead {
+    font-weight: bold;
+}
+
+.detailsWriters {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+}
+
+#writersHead {
+    font-weight: bold;
+}
+
+.detailsStars {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+}
+
+#starsHead {
+    font-weight: bold;
+}
+
+.detailsSummary{
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+}
+
+#summaryHead {
+    font-weight: bold;
+}
+
+#summaryHeader {
+    font-family: Bowlby;
+    letter-spacing: .08rem;
+}
+
+/* End of middle part of details page */
+
+/* Beginning of the movie trailer section of details page.  Minimal styles as it uses iframe code generated from YT. */
+
+.detailsTrailer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+    margin-top: 7rem;
+}
+
+/* End of movie trailer stylings. */
+
+/* Beginning of stylings for the reviews section. */
+
+hr {
+    border-top: 1px solid rgb(170, 15, 15);
+}
+
+#reviewsHeader {
+    font-family: Bowlby;
+    letter-spacing: .08rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.detailsReviews {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .75rem;
+    margin-top: 7rem;
+}
+
+.reviewsLines div {
+    padding: 2rem;
+}
+
+.reviewsLines p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8rem;
+}
+
+.reviewText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* End of review section stylings. */
+
+@media screen and (max-width: 850px) {
+    .horrorIcon {
+        background-image: none;
+        padding-bottom: 7rem;
+    }
+
+    .jumbotron {
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    /* Media queries for mobile devices on the details.php dynamic page. Image centering could use some work (any suggestions?) */
+
+    #detailsWrapper {
+        align-items: center;
+    }
+
+    .photoWrapper {
+        float: none !important;
+        display: block;
+        margin: 0 auto;
+        width: 75%;
+    }
+}
